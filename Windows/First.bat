@@ -10,9 +10,9 @@ exit
 )
 :MENU
 echo Choose An option:
-echo 1. A bunch of automated things I guess
+echo 1. Automation
 echo 2. List Processes
-echo 3. Changing Password Policies
+echo 3. Change Password Policies
 echo 4. Find Files
 echo 5. Disable Remote Desktop
 echo 6. Enable Auto-Update
