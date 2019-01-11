@@ -2,12 +2,14 @@
 echo Checking if script contains Administrative rights...
 net sessions
 if %errorlevel%==0 (
-echo Success!
+	echo Success!
 ) else (
-echo No admin, please run with Administrative rights...
-pause
-exit
+	echo No admin, restarting with Administrative rights...
+	powershell -Command "Start-Process ./First.bat -Verb RunAs"
+	exit
 )
+pause
+
 :MENU
 echo Choose An option:
 echo 1. Automation
